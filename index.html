@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./book-img1.jpg">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1>Book Store</h1>
+            <div class="login">
+                <a href="login-page.html">login</a>
+                <a href="/register-page.html">register</a> |
+                <a href="/help-page.html">help</a>
+                <input type="text" placeholder="enter your book name" ><spam class="spam" href="#">🔍</spam>
+            </div>
+        </div>
+
+        <img src="./menu-btn.png" id="menu-btn">
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="./browse-page.html">books</a></li>
+                <li><a href="#footer">content</a></li>
+            </ul>
+        </div>
+
+        <div class=container-bg>
+            <ul class="hii">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="./browse-page.html">books</a></li>
+                <li><a href="#footer">content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-background">
+            <h1>The best books collections</h1>
+            <p>Welcome to Book store, your premier destination for book lovers. We are passionate about creating a haven where readers can discover new authors, explore different genres, and connect with others who share their love for literature.Our bookstore is carefully curated to offer a diverse selection of titles, including fiction, non-fiction, children's books, and more. From classic bestsellers to new releases, our shelves are stocked with something for every interest and reading level. What sets us apart is our commitment to fostering a sense of community among book lovers. Our knowledgeable staff are always happy to offer personalized recommendations, host book clubs, and organize author events.</p>
+            <button class="browse-btn" type="button" id="browsepage">Browse Our Books</button>
+        </div>
+        <div class="header-img">
+            <img src="./books-img.png" width="600px">
+        </div>
+    </header>
+
+    <section>
+        <div class="section-bg">
+            <div class="containerone">
+                <h1>📕The Book artist</h1>
+                <img src="./book-img1.jpg" width="350px" height="200px">
+                <h6>An artist book is a unique form of artistic expression where the book itself is considered a work of art. information</h6>
+                <p> artist books focus on the visual and conceptual experience, often blending fine art, design, and storytelling. These books can take  and Marcel Duchamp have explored this medium, using it to push the boundaries of art and communication. the good very Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quis itaque dicta iure alias quisquam non eos deserunt cumque ea.</p>
+                <div class="line"></div>
+                <a href="readmore1.html">. Learn more</a>
+            </div>
+            <div class="containertwo">
+                <h1>📗 Self information</h1>
+                <img src="./book-img2.jpg" width="350px" height="200px">
+                <h6>Children's books are a special genre of literature that is designed to entertain, educate, and inspire young readers. </h6>
+                <p> Children's books cover a wide range of genres, including picture books, chapter books, and young adult novels. They often feature colorful illustrations, engaging characters, and imaginative storytelling that captivates young minds. From classic fairy tales to modern adventures, children's books play a vital role in shaping a child's imagination, creativity, and love of reading.. .</p>
+                <div class="line"></div>
+                <a href="readmore2.html">. Learn more </a>
+            </div>
+            <div class="containerthree">
+                <h1>📘Stephen King</h1>
+                <img src="./image-img3.jpg" width="350px" height="200px">
+                <h6>Non-fiction books are a genre of literature that focuses on presenting factual information and real events. Unlike fiction.</h6>
+                <p> Non-fiction books cover a wide range of topics, including history, science, biography, self-help, and more. They can take various forms, such as essays, memoirs, textbooks, and reference guides. Non-fiction books are valued for their ability to provide readers with new knowledge, insights, and perspectives on the world around them. They can help readers deepenb the world is my terrtaorist .</p>
+                <div class="line"></div>
+                <a href="readmore3.html">. Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p class="one"> steamup | Terms & Conditions | Help | Support | Contact</p>
+        <p class="one">© Copyright 2014-2015 All Rights Reserved | Designed by buythedesign.com</p>
+        <p class="two">Follow us <img src="./insta.png"  alt="" width="20px"><img src="./fb.png" alt="" width="15px"><img src="./utube.png" alt="" width="20px"><img src="./x.png" alt="" width="15px"></p>
+        <p class="two">vaild Html | vaild Css</p>
+    </footer>
+    
+    <script>
+        // function the btn
+        let browsepage = document.getElementById('browsepage')
+        browsepage.addEventListener('click',function(){
+            window.location.href='browse-page.html';
+        })
+
+        let menuBtn = document.getElementById('menu-btn');
+        let menuSecond = document.querySelector('.container-bg');
+
+        menuBtn.addEventListener("click", () => {
+        menuSecond.classList.toggle('container-bg'); // 'active' should be styled in CSS to show/hide the menu
+});
+
+    </script>
+</body>
+</html>

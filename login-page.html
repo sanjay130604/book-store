@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+</head>
+<body>
+    <section>
+        <div class="login-bg">
+                <h2>Login</h2>
+                <hr>
+                <div class="section2">
+            <ul>
+                <li><label class="username">Username</label></li>
+                <li><input class="username-input" placeholder="enter your username"></li>
+                <li><label class="Password">Password</label></li>
+                <li><input class="Password-input" placeholder="enter your Password"></li>
+                <li id="one"><a href="#">Forget Password?</a></li>
+            </ul>
+            <button type="button" onclick="login()" id="login-page">Login</button><br>
+            <div class="section3">
+            <a class="member" href="#">Not a member?</a>
+            <a class="signup" href="register-page.html">Signup</a>
+        </div>
+        </div>
+    </section>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2/family-Puppine');
+        ul{
+            list-style: none;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            background-color:rgb(237, 101, 135);
+            overflow-x: hidden;
+        }
+        section .login-bg{
+            background-color: hsl(0, 0%, 99%);
+            width: 450px;
+            height: 450px;
+            border-radius: 12px;
+            box-shadow: 3px 5px 30px hsl(0, 0%, 45%);
+        }
+
+        .section2{
+            padding: 40px;
+            padding-left: 70px;
+        }
+        section h2{
+            font-size: 2.5rem;
+            padding: 15px;
+            margin-left: 150px;
+        }
+
+        section .username{
+            color: hsl(213, 91%, 55%);
+
+        }
+
+        section .username-input{
+            background-color: hsl(0, 0%, 99%);
+            width: 300px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color:  gray;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        section .Password{
+            color: hsl(213, 91%, 55%);
+        }
+
+        section .Password-input{
+            background-color: hsl(0, 0%, 99%);
+            width: 300px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color:  gray;
+            margin-top: 10px;
+        }
+
+        section a{
+            color: hsl(0, 0%, 70%);
+            height:100px;
+
+        }
+
+        ul #one{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .login-bg button{
+            width: 300px;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+
+        .signup{
+            color:hsl(213, 91%, 55%) ;
+        }
+
+        .section3{
+            margin-left: 70px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        ::placeholder{
+            color: hsl(0, 0%, 85%);
+        }
+
+        section{
+            position: relative;
+            left: 35%;
+            top: 125px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        @media screen and (max-width:600px) {
+            .login-bg{
+                font-size: 12px;
+                position: relative;
+                left: -150px;
+                width: 400px;
+            }
+
+            .login-bg h2{
+                font-size: 25px;
+            }
+        }
+    </style>
+
+    <script>
+        let login = document.getElementById('login-page');
+        login.addEventListener('click',function(){
+            window.location.href='index.html';
+        })
+    </script>
+</body>
+</html>

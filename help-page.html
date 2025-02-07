@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help page</title>
+</head>
+<body>
+    <header>
+        <h2>Book Store</h2>
+        <img src="./menu-btn.png" width="15px" height="15px" id="click">
+    </header>
+    <section>
+        <img src="./book-bg-help.jpg" width="1550px" height="450px">
+        <h1>CONTENT AS</h1>
+    </section>
+
+    <footer>
+        <img src="./woman-book.jpg" width="400px" height="380px" class="one">
+        <h1>WHO WE ARE</h1>
+        <p class="frsit">it’s a haven for book lovers and curious minds. We offer a carefully curated selection of books across all genres, from timeless classics to hidden gems.Beyond books, we host author events, book clubs, and literary gatherings to connect readers and inspire conversations. Whether you're a lifelong reader or just beginning your journey, we’re here to help you find your next great read.Let’s turn the page together!</p>
+
+        <p class="second">It’s a haven for book lovers and curious minds. We offer a carefully curated selection of books across all genres, from timeless classics to hidden gems.Beyond books, we host author events, book clubs, and literary gatherings** to connect readers and inspire conversations. Whether you're a lifelong reader or just beginning your journey, we’re here to help you find your next great read.  Let’s turn the page together!</p>
+
+        <h4>Content : 8220355314</h4>
+
+        <img src="./man-book.jpg" width="300px" height="240px" class="two">
+    </footer>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow-x:hidden ;
+        }
+        header{
+            background-color: black;
+            height: 30px;
+        }
+        header h2{
+            color: whitesmoke;
+            font-family:serif;
+            font-size: 20px;
+            margin-left: 20px;
+            padding-top: 5px;
+        }
+
+        header img{
+            position: relative;
+            top: -22px;
+            left: 98%;
+        }
+
+        section h1{
+            position: fixed;
+            top: 230px;
+            left: 40.5%;
+            font-size: 3rem;
+        }
+
+        footer{
+            background-color: black;
+            position: relative;
+            color: whitesmoke;
+        }
+
+        footer h1{
+            padding-left: 630px;
+            margin-top: -350px;
+        }
+
+        p{
+            width: 1200px;
+            padding-left: 450px;
+            font-size: 15px;
+            padding-top: 35px;
+        }
+
+        .two{
+            margin-left: 1250px;
+            margin-top: -199px;
+            padding-bottom: 0px;
+        }
+
+        h4{
+            text-align: center;
+            padding-top: 40px;
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width:600px) {
+            section img{
+                width: 500px;
+                height: 200px;
+            }
+
+            section h1{
+                position: relative;
+                left: -100%;
+                top: -30px;
+                height: 0;
+            }
+
+            footer h1{
+                padding-left: 280px;
+                margin-top: -320px;
+                font-size: 20px;
+            }
+
+            footer img{
+                width: 250px;
+                height: 350px;
+            }
+
+            footer p{
+                width: 650px;
+                position: relative;
+                left: -190px;
+                font-size: 10px;
+                padding-top: 35px;
+                
+            }
+
+            .two{
+                width: 200px;
+                height: 200px;
+                margin-left: 270px;
+                margin-top: -40px;
+            }
+
+            footer h4{
+                margin-left: -200PX;
+                font-size: 20PX;
+                position: relative;
+                top: 70px;
+            }
+        }
+
+    </style>
+
+    <script>
+        let btn = document.getElementById('click');
+        btn.addEventListener('click',function(){
+            window.location.href="./index.html"
+        })
+    </script>
+</body>
+</html>

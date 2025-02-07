@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <nav >
+        <p>book store</p>
+        <button id="btn">← back</button>
+    </nav>
+
+    <header>
+        <h1>About Us</h1>
+        <p>
+            Welcome to Bookstore , a haven for book lovers! We offer a diverse collection of books across all genres, fast shipping, and personalized recommendations. Join us in celebrating the joy of reading!</p>
+            <img src="image-picture1.jpg" height="300px" width="500px">
+    </header>
+
+    <section class="section1">
+        <img src="image-picture2.jpg" height="300px" width="500px">
+        <h2>
+            Our Mission & Future Vision: make the world grow bettter and good way
+        </h2>
+            
+            <p>Our mission is to inspire and connect readers through diverse books. We aim to expand into a global literary community, fostering knowledge and creativity. The future holds more books, events, and enriching reading experiences!</p>
+    </section>
+
+    <section class="section2">
+        <h2>Our story</h2>
+        <p>At Bookstore , we started with a simple dream—to make books accessible to everyone, anytime, anywhere. As an online platform, we bring a vast collection of books to your fingertips, offering convenience, fast delivery, and personalized recommendations.</p>
+
+        <p>Our journey is driven by a love for literature and a commitment to fostering a community of passionate readers. Whether you're searching for bestsellers, timeless classics, or hidden gems, we are here to connect you with the stories that inspire, educate, and entertain.Join us as we continue to grow, bringing the joy of reading to book lovers worldwide!</p>
+        <img src="image-picture3.jpg" height="300px" width="500px">
+    </section>
+
+    <footer class="last-box">
+        <h2>Book store the Numbers</h2>
+        <div class="container">
+            <div class="div1">
+                <img src="earth-removebg-preview.png" height="200px" width="200px">
+                <h4>4 Global Offices</h4>
+            </div>
+            <div class="div2">
+                <img src="employer-img-removebg-preview (1).png" height="200px" width="200px">
+                <h4>7,600+ Employees</h4>
+            </div>
+            <div class="div3">
+                <img src="customer-img.jpg" height="200px" width="200px">
+                <h4>1 lakh+ Customers</h4>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow-x: none;
+            background-color:white;
+        }
+
+        nav{
+            background-color: white;
+            display: flex;
+            padding: 15px;
+        }
+
+        nav p{
+            font-weight:600;
+            font-style: italic;
+            font-size: 20px;
+            padding-left: 50px;
+        }
+
+        nav button{
+            width: 140px;
+            margin-left: 80%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+            background-color: hsl(16, 100%, 55%);
+            border: none;
+            cursor: pointer;
+        }
+
+        header{
+            background-color: hsl(195, 53%, 95%);
+        }
+
+        header h1{
+            padding: 70px;
+            padding-bottom: 0px;
+        }
+
+        header p{
+            padding-left: 70px;
+            padding-top: 20px;
+            width: 800px;
+        }
+
+        header img{
+            margin-left: 850px;
+            margin-top: -50px;
+            position: relative;
+            top: -60px;
+        }
+
+        .section1{
+            padding: 80px;
+            padding-top: 50px;
+        }
+
+        .section1 h2{
+            width: 700px;
+            margin-left: 600px;
+            margin-top: -200px;
+        }
+
+        .section1 p{
+            width: 700px;
+            margin-left: 570px;
+            margin-top:  15px;
+        }
+
+        .section2{
+            padding: 70px;
+            width: 800px;
+            height: -100px;
+        }
+
+        .section2 p{
+            padding-top: 30px;
+        }
+
+        .section2 img{
+            margin-left: 800px;
+            margin-top: -220px;
+        }
+
+        footer{
+            background-color: hsl(195, 53%, 95%);
+        }
+
+        footer h2{
+            padding-left: 40%;
+            padding-top: 30px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            right: 10px;
+            height: 350px;
+            padding-top: 40px;
+        }
+
+        .div1{
+            background-color: white;
+            padding: 10px; 
+            text-align: center;
+            height: 260px;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .div2{
+            background-color: white;
+            padding: 10px; 
+            text-align: center;
+            height: 260px;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .div3{
+            background-color: white;
+            padding: 10px; 
+            text-align: center;
+            height: 260px;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .div1:hover{
+            transform: scale(1.1);
+        }
+
+        .div2:hover{
+            transform: scale(1.1);
+        }
+
+        .div3:hover{
+            transform: scale(1.1);
+        }
+
+        button:active{
+            background-color:  hsl(16, 100%, 35%);
+        }
+
+@media screen  and (max-width:600px){
+    nav p{
+        position: relative;
+        left: -50px;
+        font-size: 15px;
+    }
+
+    nav button{
+        position: relative;
+        left: -100px;
+        padding-left:40px ;padding-right: 40px;
+        padding-top: 0px;
+        padding-bottom: -20px;
+    }
+
+    header{
+        font-size: 15px;
+        
+    }
+    header p{
+        width: 400px;
+    }
+    header h1{
+    
+    }
+
+    header img{
+        height: 250px;
+        width: 400px;
+        position: relative;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+
+    .section1 img{
+        height: 250px;
+        width: 400px;
+        position: relative;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+
+    .section1 h2{
+       font-size: 15px;
+       margin-left:-40px;
+       width: 300px;
+       margin-top: 30px;
+    }
+
+    .section1 p{
+        font-size: 15px;
+       margin-left:-40px;
+       width: 380px;
+       margin-top: 30px;
+       height: 0;
+    }
+
+    .section2 h2{
+       font-size: 20px;
+       margin-left:-25px;
+       width: 300px;
+       margin-top: 30px;
+    }
+
+    .section2 p{
+        font-size: 15px;
+       margin-left:-25px;
+       width: 340px;
+       margin-top: -10px;
+    }
+
+    .section2{
+        margin-top: -40px;
+    }
+
+    .section2 img{
+        height: 250px;
+        width: 400px;
+        position: relative;
+        margin-left: -40px;
+        margin-top: 100px;
+    }
+
+    .last-box h2{
+        position: relative;
+        left: -70px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div1{
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    .div2{
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    .div3{
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    footer{
+        height: 1000px;
+    }
+}
+
+        
+    </style>
+
+    <script>
+        let button = document.getElementById('btn');
+
+        button.addEventListener('click',function(){
+            window.location.href = './index.html'
+        })
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="icon" href="./book-img1.jpg">
+</head>
+<body>
+    <section>
+        <div class="page-bg">
+            <a class="x" type="sumbit">x</a>
+            <h1>.Register Form.</h1>
+            <ul>
+                <li><input placeholder=". Name" type="text" class="box"></li>
+                <li><input placeholder=". Email address" type="email" class="box"></li>
+                <li><input placeholder=". Country" type="text" class="box"></li>
+                <li><input placeholder=". phone" type="number" class="box"></li>
+                <li><input placeholder=". Password" type="password" class="box"></li>
+            </ul>
+            <div class="check-box-bg">
+                <input type="checkbox" id="check-box"><p>you will again check the name to password and dont share the password and you mail id  you only use information correct way</p></div>
+                <button id="btn" onclick="button()">CREATE ACCOUNT</button>
+                <div class="last">
+                    <a href="#">Already hava a account?</a>
+                    <a href="login-page.html" class="signin">sign in</a>
+                </div>
+        </div>
+    </section>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2/family-Puppine');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(./penicalback.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+justify-content: center;
+        }
+
+        section .page-bg{
+             background-color: hsl(0, 0%, 99%);
+            width: 450px;
+            height: 500px;
+            box-shadow: 3px 3px 40px 5px hsl(0, 0%, 70%);
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .x{
+            color: rgb(81, 172, 242);
+            font-size:1.4rem;
+            font-family:monospace;
+            position: relative;
+            left: 80%;
+            top: -20px;
+        }
+
+        section h1{
+            font-size: 22px;
+            color:rgb(81, 172, 242) ;
+            padding-left: 30px;
+            padding-left: 80px;
+
+        }
+
+        ul .box{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding: 15px;
+            width: 300px;
+            background-color: hsl(0, 0%, 99%);
+            border-color: rgb(81, 172, 242);
+        }
+
+        .check-box-bg{
+            width: 300px;
+            font-size: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .check-box-bg p{
+            padding: 10px;
+            margin-top: 10px;
+            color: hsl(0, 0%, 10%);
+        }
+
+        section button{
+            background-color: rgb(96, 182, 218);
+            padding: 20px;
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            justify-content: center;
+            text-align: center;
+            margin-left: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .last {
+            display: flex;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: hsl(0, 0%, 50%);
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .signin{
+            margin-left: 0;
+            color: hsl(195, 91%, 35%);
+        }
+
+        .page-bg{
+            padding-left: 70px;
+            padding-top: 20px;
+
+        }
+
+        ::placeholder{
+            color:hsl(0, 0%, 30%);
+            font-size: 15px;
+         }
+
+         input:focus{
+            outline: none;
+         }
+
+         @media screen and (max-width:600px){
+            ::placeholder{
+                font-size: 10px;
+            }
+
+            section .page-bg{
+                width: 400px;
+                padding-left: 55px;
+            }
+         }
+
+    </style>
+
+    <script>
+        let create = document.getElementById('btn')
+        create.addEventListener('click',function(){
+            window.location.href="./index.html"
+        });
+    </script>
+</body>
+</html>

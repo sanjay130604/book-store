@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+</head>
+<body>
+    <div class="payment">PAYMENT METHOD</div>
+    <div class="payment-bg">
+        <div class="payment5">Product no :</div><input placeholder="enter your upi product">
+        <div class="payment1">Credit Card:</div><input type="checkbox" id="one" onclick="checkOnlyOne(this)"><input placeholder="enter your account number">
+    <div class="payment2">Debit Card:</div><input type="checkbox" id="one" onclick="checkOnlyOne(this)"><input placeholder="enter your account number">
+    <div class="payment3">UPI:</div><input type="checkbox" id="one" onclick="checkOnlyOne(this)"><input placeholder="enter your upi id">
+    
+    <div class="payment4">Cash on divery:</div><input type="checkbox" id="one" onclick="checkOnlyOne(this)"><br>
+    <label>current Address<label><br><textarea></textarea>
+    </div>
+
+    <button id="btn">PLACE ORDER</button>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2/family-Puppine');
+body{
+    overflow-x: hidden;
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .payment{
+            background-color: hsl(51, 79%, 53%);
+            padding: 23px;
+            width: 550px;
+            margin-left: 480px;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 3px 3px 10px rgb(95, 90, 90);
+        }
+
+        .payment-bg{
+            background-color: hsl(51, 79%, 53%);
+            box-shadow: 3px 3px 10px rgb(95, 90, 70);
+            font-size: 1.3rem;
+            margin-top: -60px;
+            width: 30%;
+            position: relative;
+            left: 35%;
+            top: 100px;
+            padding: 40px;
+            padding-top: 1%;
+            height: 500px;
+        }
+
+        #one{
+            position: relative;
+            left: 300px;
+            top: -35px;
+        }
+
+        input{
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: transparent;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+
+        textarea{
+            width: 250px;
+            padding: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: transparent;
+            margin-top: 0px;
+            margin-left: 20px
+            
+         } 
+
+         textarea:focus{
+            outline: none;
+         }
+
+        ::placeholder{
+            font-size: 15px;
+            margin-left: -300px;
+        }
+
+        button{
+            padding: 20px;
+            background-color: hsl(51, 79%, 53%);
+        text-align: center;      
+        width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        left: 40%;
+        box-shadow: 3px 3px 10px rgb(95, 90, 70);
+        top: 130px;
+      }
+
+      @media screen and (max-width:600px) {
+    .payment{
+        position: relative;
+        left: -380px;
+        font-size: 25px;
+        width: 300px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+
+    .payment-bg{
+        font-size: 15px;
+        width: 400px;
+        margin-left: -120px;
+        padding-top: 20px;
+    }
+
+    button{
+        margin-left: -30px;
+        margin-top: 20px;
+        width: 180px;
+    }
+}
+    </style>
+
+    <script>
+        let buy = document.getElementById('btn');
+        buy.addEventListener('click',function(){
+            window.location.href="./successfully.html"
+        });
+
+        function checkOnlyOne(checkbox) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(item) {
+                if (item !== checkbox) {
+                    item.checked = false;
+                }
+            });
+        }
+    </script>
+</body> 
+</html>

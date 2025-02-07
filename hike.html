@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hike</title>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <img src="./book12.jpg" width="400px" height="600px">
+        </div>
+        <div class="content">
+        <div class="header">
+            <h2>The Hike </h2>
+            <p>Kindle Edition ( PRODUCT:113 )</p>
+        </div>
+        <div class="header2">
+            <p>by<spam class="author"> Lucy Clarke</spam>(Author) | Format:<spam class="edition">Kindle Edition</spam></p>
+            <p class="rating">920ratings</p>
+        </div>
+
+        <div class="section01">
+            <p>see all formats and editions</p>
+        </div>
+
+        <div class="box">
+            <div class="book1"><h3>pdf format</h3><p>$10.11</p><input type="checkbox" id="one" onclick="checkOnlyOne(this)"></div>
+            <div class="book2"><h3>hardcopy</h3><p>$11.99</p><input type="checkbox" id="one" onclick="checkOnlyOne(this)"></div>
+        </div>
+
+        <div class="para01">
+            <p class="para-small">The Hike by Drew Magary is a thrilling and surreal adventure novel that follows the journey of Ben, an ordinary man who embarks on a business trip and decides to take a short hike in the woods. However, what starts as a simple walk quickly turns into a bizarre and unpredictable odyssey filled with strange creatures, mythical beings, and mind-bending challenges. As Ben struggles to find his way back home, he encounters talking crabs, giant insects, and even time-altering landscapes, forcing him to confront his fears and inner demons.</p>
+
+            <p class="para-big">Throughout his journey, Ben is tested in ways he never imagined, making The Hike both an intense adventure and a deeply introspective tale. The novel blends humor, horror, and fantasy, creating a unique and thought-provoking story about self-discovery, fate, and the power of perseverance. With its imaginative world-building and unexpected twists, The Hike keeps readers engaged while delivering a powerful message about resilience and personal growth.</p>
+        </div>
+
+        <button id="btn" onclick="button()">buy</button>
+    </div>
+    </section>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2/family-Puppine');
+        .image{
+            padding: 40px;
+            width: 400px;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .header{
+            display: flex;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+        }
+
+        .header p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .header2 p{
+            margin-top: -10px;
+            margin-left: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+        }
+
+        .header2 .spam{
+            color: rgb(14, 122, 189);
+        }
+
+        .header2 .edition{
+            color: rgb(14, 122, 189);
+        }
+
+        .header2 .rating{
+            color: rgb(14, 122, 189);
+        }
+
+        .section01 p{
+            margin-left: 12px;
+            color: rgb(14, 122, 189);;
+            font-size: 0.9rem;
+        }
+        .book1{
+            width: 200px;
+            height: 60px;
+            border-radius: 7px;
+            border: rgb(227, 168, 94) 2px solid;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .book1 h3{
+            margin-top: 10px;
+        }
+
+        .book2{
+            width: 200px;
+            height: 60px;
+            border-radius: 7px;
+            border: rgb(227, 168, 94) 2px solid;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            margin-left: 30px;
+        }
+
+        .book2 h3{
+            margin-top: 10px;
+        }
+
+        .box{
+            display: flex;
+
+        }
+
+        .book1:hover{
+            background-color: rgb(241, 224, 173);
+        }
+
+        .book2:hover{
+            background-color: rgb(241, 224, 173);
+        }
+
+        .para01 .para-small{
+            font-size: 15px;
+            width: 800px;
+            font-weight: bold;
+        }
+
+        .para01 .para-big{
+            font-size: 14px;
+            font-weight: 500;
+            width: 800px;
+        }
+
+        button{
+            width: 300px;
+            margin-left: 60px;
+            height: 35px;
+            margin-top: 50px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            background-color: hsl(51, 79%, 53%);
+        }
+
+        .content{
+            position: relative;
+            top: -580px;
+            left: 40%;
+            height: 0;
+        }
+
+        #one{
+            position: relative;
+            top: -30px;
+            left: 150px;
+        }
+
+        @media screen and (max-width:600px){
+    img{
+        height: 400px;
+        width: 300px;
+        margin-left: 20px;
+    }   
+
+    .content{
+        font-size: 10px;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        width: 410px;
+    }
+
+    .para01 .para-small{
+        width: 450px;
+        text-align: center;
+    }
+
+    .para01 .para-big{
+        width: 450px;
+        text-align: center;
+    }
+
+    </style>
+
+    <script>
+        let buy = document.getElementById('btn');
+        buy.addEventListener('click',function(){
+            window.location.href="./buy-page.html"
+        });
+
+        function checkOnlyOne(checkbox) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(item) {
+                if (item !== checkbox) {
+                    item.checked = false;
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

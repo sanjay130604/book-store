@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The relativity</title>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <img src="./book8.jpg" width="400px" height="600px">
+        </div>
+        <div class="content">
+        <div class="header">
+            <h2>The relativity</h2>
+            <p>Kindle Edition ( PRODUCT:120 )</p>
+        </div>
+        <div class="header2">
+            <p>by<spam class="author"> Albert Einstein</spam>(Author) | Format:<spam class="edition">Kindle Edition</spam></p>
+            <p class="rating">930r+atings</p>
+        </div>
+
+        <div class="section01">
+            <p>see all formats and editions</p>
+        </div>
+
+        <div class="box">
+            <div class="book1"><h3>pdf format</h3><p>$13.14</p><input type="checkbox" id="one" onclick="checkOnlyOne(this)"></div>
+            <div class="book2"><h3>hardcopy</h3><p>$13.99</p><input type="checkbox" id="one" onclick="checkOnlyOne(this)"></div>
+        </div>
+
+        <div class="para01">
+            <p class="para-small">
+                Albert Einstein’s The Theory of Relativity revolutionized physics by introducing the concepts of special and general relativity. It fundamentally changed our understanding of space, time, and gravity.</p>
+
+            <p class="para-big"> The theory explains how time and space are not absolute but relative, depending on the observer’s motion. Special relativity introduced the famous equation E=mc², showing the relationship between energy and mass. General relativity expanded on this by describing gravity as the curvature of spacetime caused by massive objects. Einstein’s work has had profound implications in cosmology, astrophysics, and modern technology, shaping everything from GPS systems to our understanding of black holes and the expanding universe.</p>
+        </div>
+
+        <button id="btn" onclick="button()">buy</button>
+    </div>
+    </section>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2/family-Puppine');
+        .image{
+            padding: 40px;
+            width: 400px;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .header{
+            display: flex;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+        }
+
+        .header p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .header2 p{
+            margin-top: -10px;
+            margin-left: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+        }
+
+        .header2 .spam{
+            color: rgb(14, 122, 189);
+        }
+
+        .header2 .edition{
+            color: rgb(14, 122, 189);
+        }
+
+        .header2 .rating{
+            color: rgb(14, 122, 189);
+        }
+
+        .section01 p{
+            margin-left: 12px;
+            color: rgb(14, 122, 189);;
+            font-size: 0.9rem;
+        }
+        .book1{
+            width: 200px;
+            height: 60px;
+            border-radius: 7px;
+            border: rgb(227, 168, 94) 2px solid;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .book1 h3{
+            margin-top: 10px;
+        }
+
+        .book2{
+            width: 200px;
+            height: 60px;
+            border-radius: 7px;
+            border: rgb(227, 168, 94) 2px solid;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            margin-left: 30px;
+        }
+
+        .book2 h3{
+            margin-top: 10px;
+        }
+
+        .box{
+            display: flex;
+
+        }
+
+        .book1:hover{
+            background-color: rgb(241, 224, 173);
+        }
+
+        .book2:hover{
+            background-color: rgb(241, 224, 173);
+        }
+
+        .para01 .para-small{
+            font-size: 15px;
+            width: 800px;
+            font-weight: bold;
+        }
+
+        .para01 .para-big{
+            font-size: 14px;
+            font-weight: 500;
+            width: 800px;
+        }
+
+        button{
+            width: 300px;
+            margin-left: 60px;
+            height: 35px;
+            margin-top: 50px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            background-color: hsl(51, 79%, 53%);
+        }
+
+        .content{
+            position: relative;
+            top: -580px;
+            left: 40%;
+            height: 0;
+        }
+
+        #one{
+            position: relative;
+            top: -30px;
+            left: 150px;
+        }
+
+        @media screen and (max-width:600px){
+    img{
+        height: 400px;
+        width: 300px;
+        margin-left: 20px;
+    }   
+
+    .content{
+        font-size: 9px;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        width: 410px;
+    }
+
+    .para01 .para-small{
+        width: 450px;
+        text-align: center;
+    }
+
+    .para01 .para-big{
+        width: 450px;
+        text-align: center;
+    }
+
+    </style>
+
+    <script>
+        let buy = document.getElementById('btn');
+        buy.addEventListener('click',function(){
+            window.location.href="./buy-page.html"
+        });
+
+        function checkOnlyOne(checkbox) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(item) {
+                if (item !== checkbox) {
+                    item.checked = false;
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>
